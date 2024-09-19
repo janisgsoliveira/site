@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #90d3a1;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50; 
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #fff;
+    border: 2px solid #020508;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="file"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #2c3e50;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: #083312;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #1a242f;
+}
+
+fieldset {
+    border: 1px solid #2c3e50;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+fieldset label {
+    display: inline; 
+    margin-right: 15px; 
+    text-align: center;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.gen {
+    display: flex; 
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.gen label {
+    margin-right: 15px; 
+}
+

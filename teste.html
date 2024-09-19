@@ -1,0 +1,119 @@
+<!-- 
+
+Construir um Formulário HTML5, 
+com no mínimo 05 tipos de campos com tags/elementos/atributos diferentes,  
+para entrada de dados de um tema da sua escolha, 
+e que seja único entre os alunos da sala de aula.
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de Plantas</title>
+</head>
+<body>
+    <h1>Cadastro de Plantas</h1>
+    <p>Monitore suas plantinhas com o cadastro de plantas!</p><br>
+
+    <form action="" autocomplete="off">
+        <div name="info_text">
+            <label for="nomePop">Nome Popular:</label>
+                <input id="nomePop" type="text" placeholder="Digite o nome popular da planta" required><br><br>
+            <label for="nomeCient">Nome Científico:</label>
+                <input id="nomeCient" type="text" placeholder="Digite o nome científico da planta"><br><br>
+            <label for="cod">Código:</label>
+                <input id="cod" type="text"  pattern="[0-9]{4}-[A-Z]{2}" title="0000-AA" placeholder="Digite o código da planta"><br><br>
+            <label for="substrato">Substrato:</label>
+                <input id="substrato" type="text" placeholder="Digite o substrato usado na planta" required><br><br>
+            <label for="adubo">Adubo:</label>
+                <input id="adubo" type="text" placeholder="Digite o adubo usado na planta" required><br><br>
+        </div>
+
+        <div name="select_class">
+            <label>Classificação:</label>
+            <select name="class">
+                <option selected disabled value>Selecione a classificação da planta</option>
+                <option value="brio">Briófitas</option>
+                <option value="pter">Pteridófitas</option>
+                <option value="gimn">Gimnospermas</option>
+                <option value="angi">Angiospermas</option>
+            </select><br><br>
+        </div>
+
+        <div name="select_tipo">
+            <label>Tipo:</label>
+            <select name="tipo" required>
+                <option selected disabled value>Selecione o tipo da planta</option>
+                <option value="plAr">Plantas do Ar</option>
+                <option value="sucul">Suculentas</option>
+                <option value="cacto">Cactos</option>
+                <option value="bonsai">Bonsai</option>
+                <option value="calat">Calatheas</option>
+                <option value="pend">Pendentes</option>
+                <option value="koke">Kokedamas</option>
+                <option value="orq">Orquídeas</option>
+                <option value="plAlta">Plantas Altas</option>
+                <option value="plVerde">Plantas Verdes</option>
+                <option value="nativ">Nativa</option>
+                <option value="exot">Exótica</option>
+                <option value="frut">Frutífera</option>
+                <option value="hort">Hortaliça</option>
+                <option value="leg">Leguminosa</option>
+                <option value="ornament">Ornamental</option>
+                <option value="eucalyp">Eucalyptus</option>
+                <option value="palm">Palmeira</option>
+                <option value="flor">Flor</option>
+                <option value="arv">Árvore</option>
+                <option value="herb">Herbáceas</option>
+                <option value="arb">Arbustos</option>
+                <option value="bambu">Bambu</option>
+                <option value="med">Medicinal</option>
+                <option value="trep">Trepadeira</option>
+                <option value="forro">Forração</option>
+                <option value="temp">Tempero</option>
+            </select><br><br>
+        </div>
+
+        <div name="info_adic">
+            <div class="gen">
+                <label for="gen">Gênero:</label>
+                    <input id="genF" type="radio" name="gen" value="fem">
+                    <label for="genF">Fêmea</label>
+                    <input id="genM" type="radio" name="gen" value="masc">
+                    <label for="genM">Macho</label><br><br>
+            </div>
+            <fieldset name="ambiente">
+                <legend>Ambientação:</legend>
+                    <label for="local">Local:</label><br>
+                        <input id="sol" type="checkbox" name="local" value="sol">
+                        <label for="sol">Sol pleno</label>
+                        <input id="meia_sombra" type="checkbox" name="local" value="meia_sombra">
+                        <label for="meia_sombra">Meia sombra</label>
+                        <input id="sombra_leve" type="checkbox" name="local" value="sombra_leve">
+                        <label for="sombra_leve">Sombra leve</label><br><br>
+                    <label for="temperatura">Temperatura:</label><br>
+                        <label for="tempMin">Mínima: </label>
+                        <input id="tempMin" type="range" name="temperatura">
+                        <label for="tempMax">Máxima: </label>
+                        <input id="tempMax" type="range" name="temperatura"><br><br>
+                    <label for="umidade">Umidade:</label>
+                        <input id="umidade" type="number" placeholder="0">%
+            </fieldset><br>
+            <label for="dataPlantio">Data de Plantio:</label>
+                <input id="dataPlantio" type="date" required><br><br>
+            <label for="img">Foto:</label>
+                <input id="img" type="file"><br><br>
+            <label for="obs">Observações:</label><br>
+                <textarea rows="10" cols="40" id="obs" placeholder="Digite alguma observação que deseja destacar."></textarea><br><br>
+        </div>
+
+        <button type="submit" value="cadastrar">CADASTRAR</button>
+        <button type="reset">Cancelar</button>
+
+    </form>
+</body>
+</html>
